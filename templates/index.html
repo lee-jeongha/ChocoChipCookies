@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>자소서 요약 서비스</title>
+</head>
+<body>
+    <h1>자소서 요약 서비스</h1>
+    <div>
+        <form action="\" method="get">
+            <label><자소서 입력></label><br><br>
+            {% if data %}
+                <textarea name="text" cols="100" rows="50" id="text" required placeholder="자소서를 적어주세요.">{{value}}</textarea><br><br>
+            {% else %}
+                <textarea name="text" cols="100" rows="50" id="text" required placeholder="자소서를 적어주세요."></textarea><br><br>
+            {% endif %}
+            <button type="submit">요약하기</button><br><br>
+            {% if data %}
+                {{data}}
+            {% endif %}
+        </form>
+    </div>
+</body>
+</html>
