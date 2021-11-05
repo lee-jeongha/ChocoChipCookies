@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Expires" content="Mon, 06 Jan 1990 00:00:01 GMT">
+    <meta http-equiv="EXpires" content="-1">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Cache-Control" content="no-cache">
+    <title>
+        TTS
+    </title>
+</head>
+
+<body>
+    <form method="POST">
+        <div>
+	<textarea name="text" cols="20" rows="10" class="form-control" id="text_s"></textarea>
+        </div>
+        <div>
+	<select name="voice" class="form-control" id="voice_s">
+		<option value="WOMAN_READ_CALM">차분한 여성</option>
+		<option value="MAN_READ_CALM">차분한 남성</option>
+		<option value="WOMAN_DIALOG_BRIGHT">밝은 여성</option>
+		<option value="MAN_DIALOG_BRIGHT">밝은 남성</option>
+	</select>
+	<button type="submit" id="text-to-speech">재생</button>
+        </div>
+    </form>
+</body>
+</html>
