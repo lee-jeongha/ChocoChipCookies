@@ -1,15 +1,44 @@
-# ChocoChipCookies_Proto_01
+# 자문 : 취업의 문을 열다
 
-스타트 11조 초코칩쿠키의 프로토 타입입니다.
-자소서를 요약해주는 웹사이트입니다.
+* 자기소개서 기반 모의면접
+* 웹사이트 바로 이동(링크)
 
-AWS 웹 서버를 이용해 구동합니다.
+자문은 자기소개서와 기존 면접 질문 간의 유사도 파악을 통해 얻어진 면접 질문으로 모의 면접 체험을 제공하는 웹사이트입니다. 이 웹사이트는 이화여자대학교 컴퓨터공학 21-2 캡스톤디자인프로젝트 11조 초코칩쿠키의 프로젝트 결과입니다.
 
-참고한 내용은 다음과 같습니다.
-* https://jaehyeongan.github.io/2020/01/13/aws-flask/
-* https://ndb796.tistory.com/244
-* https://djangoworld.tistory.com/17
-* https://sundries-in-myidea.tistory.com/102
-* https://docs.aws.amazon.com/ko_kr/AWSEC2/latest/UserGuide/TroubleshootingInstancesConnecting.html#TroubleshootingInstancesConnectionTimeout
-* https://blog.naver.com/dlwndud1207/222306099425
-* https://stackoverflow.com/questions/49389535/problems-with-flask-and-bad-request
+### Architecture
+(사진)
+
+### 핵심 기능
+* 입력받은 자기소개서의 각 문장과 기존 면접 질문간의 유사도를 판별하여 가장 적절한 면접 질문을 추출합니다.
+* 사용자가 선택한 면접 유형에 따라 면접 질문을 제시하여 모의 면접을 진행합니다.
+* 진행한 모의 면접의 질문과 답변은 텍스트, 음성 파일로 저장되어 사용자가 직접 확인할 수 있습니다.
+
+### 사용 방법
+시연 영상 : (유튜브 링크)
+
+(캡쳐본 넣어서 사용법 설명)
+
+### Data
+초기 데이터는 잡코리아 크롤링 데이터를 익명화 후 정제하여 수집하였습니다.
+* 면접 질문 : 5,690
+* 자기소개서 문장 : 15,649
+
+학습을 위해, 수집한 데이터를 tf-idf 알고리즘을 활용하여 유사도를 파악하는 방식으로 [면접질문-자기소개서 문장] 데이터셋을 제작하였습니다.
+* 유사한 데이터쌍 : 141,113
+* 유사하지 않은 데이터쌍 : 143,774
+
+### 유사도 모델
+자문의 유사도 판단 모델에는 다음과 같은 기술을 사용하였습니다.
+* (기)
+* (술)
+* (들)
+
+### 웹페이지
+자문 웹페이지 구현을 위해 다음과 같은 기술을 사용하였습니다.
+* (기)
+* (술)
+* (들)
+
+또한 모의 면접 진행을 위한 TTS, STT 기술을 위해 다음과 같은 (패키지/라이브러리) 를 사용하였습니다.
+* (tts)
+* (stt)
