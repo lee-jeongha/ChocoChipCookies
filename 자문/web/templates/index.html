@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="kr">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>자문</title>
+
+	<!-- CSS 연결 -->
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='/css/jquery.fullPage.css') }}">
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='/css/main.css') }}">
+
+	<!-- JS 연결 -->
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+	<script type="text/javascript" src="{{ url_for('static', filename='/js/jquery.fullPage.js') }}"></script>
+	<script type="text/javascript" src="{{ url_for('static', filename='/js/main.js') }}"></script>
+</head>
+<body>
+	
+	<button class="switch" onClick="location.href='input'"><span style="text-decoration: double;">자문하기</span></button>
+	
+	<!-- 메인 (fullpage) -->
+	<main id="fullpage">
+		<!-- 홈페이지 -->
+		<section class="section">
+			<div class="title">
+				<h6>취업의 문을 열어줄</h6>
+				<h1>자문</h1><br>
+				<h5>		자소서에서 나온 면접질문		</h5><br><i class="icon-star"></i>
+			</div>
+			<div id="jamb" onclick="location.href='input'">
+				<div class="side" id="side1"></div>
+				<div class="side" id="side2"></div>
+				<div class="side" id="side3"></div>
+				<div class="side" id="side4"></div>
+				<div class="crack" id="door">
+					<div id="knob"></div>
+					<div id="porthole"></div>
+				</div>
+			</div>
+			<div class="text">>> 문을 열어보세요</div>				
+		</section>
+
+		<!-- 소개 페이지 -->
+		<section class="section">
+			<div class="slide">
+				<h2 class="maincolor">자문 소개 1</h2>
+			</div>
+			<div class="slide">
+				<h2 class="maincolor">자문 소개 2</h2>
+			</div>
+		</section>
+
+		<!-- ask & footer -->
+		<section class="section fp-auto-height">
+			<p class="padding"></p>
+			<p class="ask_p">궁금하신 점이나 요청사항이 있다면 편하게 연락주세요</p>
+			<a href="" target="_blank" class="ask"><span>문의하기</span></a>
+			<p class="padding"></p>
+			<p class="padding"></p>
+			<p class="footer">ⓒ 2021 초코칩쿠키</p>
+		</section>
+</body>
+</html>
