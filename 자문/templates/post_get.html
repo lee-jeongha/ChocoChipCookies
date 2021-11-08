@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script type='text/javascript'
+            src="{{ url_for('static', filename='post_get.js') }}"></script>
+<h2>입력한 내용은 {{ name }}입니다.</h2>
+<form method = 'post'>
+    <textarea name="name" cols="100" rows="50" id="text" required placeholder="자소서를 적어주세요.">{{ name }}</textarea><br><br>
+    <input name="button" type="submit" value="확인"><br><br>
+    <!--<ul type = "circle">
+        <li>{% if name_list %}
+                {{ name_list }}
+            {% endif %}</li>
+    </ul>-->
+
+    <!--<script language="JavaScript">
+        list = {{ name_list }};
+        for (i=0; i<list.length; i++){
+            document.write("list["+i+"]"+list[i]+"<br>");
+        }
+    </script>-->
+
+    <!--{% for post in name_list %}
+        {{ post }}
+    {% endfor %}
+    <br><br>-->
+
+    <input type="button" onclick="print_name({{name_list}})" value="다음 질문"></button>
+    <div id="count" style="display: none;">0</div> <!-- style="display: none;" | 숫자가 화면에는 안 보이게 -->
+    <br><span id="result"></span>
+</form>
+</body>
+</html>
