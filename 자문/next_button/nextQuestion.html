@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script type='text/javascript'
+            src="{{ url_for('static', filename='nextQuestion.js') }}"></script>
+<h2>입력한 내용은 {{ resume }}입니다.</h2>
+
+<form method = 'post'>
+    <input type="button" id="next-button" onclick="print_name({{resume_list}})" value="다음 질문"></button>
+    <div id="count" style="display: none;">0</div> <!-- style="display: none;" | 숫자가 화면에는 안 보이게 -->
+    <br><span id="result"></span> <!-- 이 자리에 면접 질문이 나타남 -->
+
+</form>
+</body>
+</html>
