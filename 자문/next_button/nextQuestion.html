@@ -10,10 +10,12 @@
 <h2>입력한 내용은 {{ resume }}입니다.</h2>
 
 <form method = 'post'>
-    <input type="button" id="next-button" onclick="print_name({{resume_list}})" value="다음 질문"></button>
+    <input type="button" id="next-ques" onclick="print_name({{resume_list}})" value="다음 질문"></button>
     <div id="count" style="display: none;">0</div> <!-- style="display: none;" | 숫자가 화면에는 안 보이게 -->
-    <br><span id="result"></span> <!-- 이 자리에 면접 질문이 나타남 -->
-
+    <br><span id="question"></span> <!-- 이 자리에 면접 질문이 나타남 -->
 </form>
+    <input type="button" id="next-answer" onclick="listen()" value="답변 말하기"></button>
+    <div class="answer" contenteditable> </div> <!-- 이 자리에 면접자 대답이 나타남 -->
+    <input type="button" id="end-interview" value="면접 끝내기"></button>
 </body>
 </html>
