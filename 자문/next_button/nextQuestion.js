@@ -91,12 +91,11 @@ function listen(){
     };
 
     //"면접 끝내기" 버튼 누르면 인식 종료
+    endButton.addEventListener('click', function(){
+        recognition.abort();
+    });
     /*endButton.onclick = function() {
         recognition.abort();
         console.log('Speech recognition aborted.');
     };*/
-
-    endButton.addEventListener('click', function(){
-        recognition.abort();
-    });
 }
