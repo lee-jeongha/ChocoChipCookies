@@ -20,7 +20,9 @@ PC의 경우
 * Samsung Internet
 
 ### Architecture
-(사진)
+![구조도](https://user-images.githubusercontent.com/43198971/141683940-5b16e940-d8ec-49c2-b9c6-c489c07ea9ea.png)
+
+프로젝트의 시스템 플로우를 표기한 구조도입니다.
 
 ### 핵심 기능
 * 입력받은 자기소개서의 각 문장과 기존 면접 질문 간의 유사도를 판별하여 가장 적절한 면접 질문을 추출합니다.
