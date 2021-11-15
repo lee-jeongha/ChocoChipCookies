@@ -34,19 +34,23 @@ PC의 경우
 2. UI
 
 <img src="https://user-images.githubusercontent.com/43198971/141724160-8d3df628-001d-4bda-81ae-0c20b31978fa.png" width="50%">
+
 중앙 상단 [자문하기] 버튼 클릭, 또는 중앙 하단 문 아이콘 클릭하여 프로그램 시작
 
 
 <img src="https://user-images.githubusercontent.com/43198971/141721567-8660e17b-b030-4db1-ae8d-1ccd339612c9.png" width="50%">
+
 자기소개서 입력창에 자기소개서를 입력한 후, 하단 [자문하기] 버튼 클릭
 
 <img src="https://user-images.githubusercontent.com/43198971/141721569-946243cc-5dca-4905-8794-5dac72d24150.png" width="50%">
+
 노란 말풍선의 면접질문을 보고, [답변하기] 버튼을 클릭 후 질문에 대해 답하기
 
 답이 힘든 질문의 경우, [넘어가기] 버튼 클릭
 
 <img src="https://user-images.githubusercontent.com/43198971/141721574-633690f8-5745-4bdc-a25d-2b1d5803ceae.png" width="50%">
-마지막 면접 질문 후, [TXT로 다운받기] 버튼 클릭하여 전체 질문과 답변 파일 다운로드
+
+마지막 면접 질문 후, [TXT로 다운받기] 버튼 클릭하여 답변을 정상적으로 마친 질문과 답변 텍스트 파일 다운로드
 
 
 ### Data
