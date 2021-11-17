@@ -4,14 +4,27 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>자문</title>
+	<link rel="shortcut icon" type="image/x-icon" href="{{ url_for('static', filename='/img/logo32x32_line.png') }}">
 	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='/css/input.css') }}">
+	<script src="{{ url_for('static', filename='/js/jquery.min.js') }}"></script>
+	<script src="{{ url_for('static', filename='/js/input.js') }}"></script>
 </head>
 <body>
-	<header></header>
-	<h2 class="txt">자소서를 입력해주세요</h2>
-	<form action="{{ url_for('question.create') }}" method="post">
-		<textarea name="content" id="content"></textarea><br>
-		<button type="submit" class="switch"><span style="text-decoration: double;">자문하기</span></button>
-	</form>
+	<header>
+		<h1 class="title">자기소개서 입력 ✍</h1>
+		<nav>
+			<img class="logo" src="{{ url_for('static', filename='/img/logo32x32_line.png') }}" alt="홈페이지로 돌아가기">
+			<div class="overlay">
+				<div class="text">홈페이지로 돌아가기</div>
+			</div>
+		</nav>
+	</header>
+	<div class="wrapper">
+		<h2 class="txt">자기소개서를 작성해주세요.</h2>
+		<div>
+			<textarea name="content" id="content"></textarea><br>
+			<button class="switch" onClick="location.href='interview'"><span style="text-decoration: double;">자문하기</span></button>
+		</div>
+	</div>
 </body>
 </html>
