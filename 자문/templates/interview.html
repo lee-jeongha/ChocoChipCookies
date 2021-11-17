@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>자문</title>
+    <link rel="shortcut icon" type="image/x-icon" href="{{ url_for('static', filename='/img/logo32x32_line.png') }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='/css/interview.css') }}">
+    <script src="{{ url_for('static', filename='/js/nextQuestion.js') }}"></script>
+    <script src="{{ url_for('static', filename='/js/interview.js') }}"></script>
+</head>
+<body>
+    <div class="back">
+        {% for i in range(question_n) %}
+            <div class="question behind" id="q{{ i }}">{{ question[i] }}</div>
+            <div class="answer behind" id="a{{ i }}">
+                <div class="buttons show" id="ab{{ i }}">
+                    <button class="yes" id="yes{{ i }}" onclick="yes_click({{ i }});" disabled="true">답변하기</button>
+                    <button class="no" id="no{{ i }}" onclick="no_click({{ i }}, {{ question_n }});" disabled="true">넘어가기</button>
+                </div>
+                <div class="loading behind" id="al{{ i }}">
+                    <div class="loading-pulse"></div>
+                    <button class="done" id="done{{ i }}" onclick="done_click({{ i }}, {{ question_n }});" disabled="true">답변 끝내기</button>
+                </div>
+                <div class="content behind" id="ac{{ i }}"></div>
+            </div>
+        {% endfor %}
+        <div class="behind" id="temp"></div>
+        <div class="last behind" id="last">
+            <p class="text">모의면접이 종료되었습니다. 수고하셨습니다!<br>모의면접 결과는 텍스트 파일로 다운받을 수 있습니다. </p>
+            <button class="down behind" id="down" onclick="download()" disabled="true">TXT로 다운받기</button>
+        </div>
+        <div class="result behind" id="result"><br>　　　──────────<br><br>　　　　　　　　모의면접 결과</div>
+    </div>
+</body>
+</html>
