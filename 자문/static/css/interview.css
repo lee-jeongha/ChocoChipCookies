@@ -1,0 +1,358 @@
+.title {
+    margin: 100px;
+    margin-bottom: 0;
+    padding: 20px;
+    text-align: center;
+    font-family: 'SBAggroB';
+    font-size: 4em;
+    color: #905bb5;
+    white-space: nowrap;
+}
+
+.behind {
+    opacity: 0;
+    height: 0;
+}
+
+.show {
+    opacity: 1;
+    height: auto;
+}
+
+.talk {
+    padding: 20px;
+    text-align: center;
+    font-family: 'Pretendard-Light';
+    font-size: 1.2em;
+    color: #000;
+}
+
+.back {
+    position: relative;
+    width: 95%;
+    height: auto;
+    padding: 5% 5%;
+    background: #fafafa;
+    overflow-x: hidden;
+}
+
+.question {
+    font-family: 'NEXON Lv1 Gothic OTF';
+    font-size: 1.2em;
+    position: relative;
+    width: 60%;
+    padding: 40px;
+    margin: 30px;
+    display: inline-block;
+    height: auto;
+    background: #feb737;
+    border-radius: 30px;
+	-webkit-border-radius: 30px;
+	-moz-border-radius: 30px;
+	box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.2);
+	-moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+.question:after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 0;
+    left: -15px;
+    right: auto;
+    top: 20px;
+    bottom: auto;
+    border: 20px solid;
+    border-color: #feb737 transparent transparent transparent;
+}
+
+.question:before {
+    content: '📢';
+    font-size: 1.5em;
+    padding: 20px;
+    width: auto;
+    height: auto;
+    position: absolute;
+    top: 50%;
+    right: 0px;
+    transform: translate(70%, -50%);
+
+    border: none;
+    border-radius: 50%;
+    background: #fafafa;
+    box-shadow: 1px 1px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+}
+
+body {
+  background: #fafafa;
+  overflow-x: hidden;
+}
+
+body::-webkit-scrollbar {
+    width: 10px;
+}
+
+body::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background: #905bb5;
+    width: 8px;
+}
+
+body::-webkit-scrollbar-track {
+    border-radius: 10px;
+    background: #feb737;
+}
+
+.answer {
+    font-family: 'Pretendard-Light';
+    font-size: 1.2em;
+    position: relative;
+    margin-left: 30%;
+    width: 60%;
+    min-height: 160px;
+    display: inline-block;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background: #905bb5;
+    border-radius: 30px;
+	-webkit-border-radius: 30px;
+	-moz-border-radius: 30px;
+	box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.2);
+	-moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+.answer:after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 0;
+    left: auto;
+    right: -15px;
+    top: 20px;
+    bottom: auto;
+    border: 20px solid;
+    border-color: #905bb5 transparent transparent transparent;
+}
+
+.yes {
+    color: #000;
+    background: #fe838b;
+    border-radius: 10px;
+    border: none;
+
+    position: absolute;
+    top: 40px;
+    left: 50%;
+    transform: translate(-50%, 0);
+
+    width: 65%;
+    height: 50px;
+    cursor: default;
+
+    font-family: 'Pretendard-Light';
+    font-size: 1em;
+    font-weight: 600;
+}
+
+.yes:hover {
+    opacity: 70%;
+}
+
+.no {
+    color: #000;
+    background: #a7c4fe;
+    border-radius: 10px;
+    border: none;
+
+    position: absolute;
+    bottom: 40px;
+    left: 50%;
+    transform: translate(-50%, 0);
+
+    width: 65%;
+    height: 50px;
+    cursor: default;
+
+    font-family: 'Pretendard-Light';
+    font-size: 1em;
+    font-weight: 600;
+}
+
+.no:hover {
+    opacity: 70%;
+}
+
+.done {
+    color: #000;
+    background: #feb737;
+    border-radius: 10px;
+    border: none;
+
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translate(-50%, 0);
+
+    width: 65%;
+    height: 0px;
+    cursor: default;
+
+    font-family: 'Pretendard-Light';
+    font-size: 1em;
+    font-weight: 600;
+}
+
+.done:hover {
+    opacity: 70%;
+}
+
+.content {
+    padding: 10px 30px;
+    color: #fafafa;
+    overflow: auto;
+}
+
+.last {
+    width: 100%;
+    text-align: center;
+    align-items: center;
+}
+
+.text {
+    position: relative;
+    font-family: 'NEXON Lv1 Gothic OTF';
+    font-weight: 600;
+    font-size: 1.5em;
+    text-align: center;
+    margin: 100px;
+    margin-bottom: 20px;
+}
+
+.down {
+    position: relative;
+
+    background: #905bb5;
+    color: #fafafa;
+    width: 30%;
+    min-width: 200px;
+    height: 100px;
+    cursor: default;
+    border: none;
+    border-radius: 10px;
+
+    font-family: 'SBAggroB';
+    font-size: 1.4em;
+    font-weight: 500;
+    margin: 20px;
+}
+
+.down:hover {
+    color: #feb737;
+}
+
+.result {
+    cursor: default;
+}
+
+@-webkit-keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@-webkit-keyframes pulse {
+  50% {
+    background: white;
+  }
+}
+@keyframes pulse {
+  50% {
+    background: white;
+  }
+}
+
+.loading-pulse {
+  position: absolute;
+  top: 60px;
+  left: 50%;
+  transform: translate(-50%, 0%);
+  width: 6px;
+  height: 24px;
+  background: rgba(255, 255, 255, 0.2);
+  -webkit-animation: pulse 750ms infinite;
+          animation: pulse 750ms infinite;
+  -webkit-animation-delay: 250ms;
+          animation-delay: 250ms;
+}
+
+.loading-pulse:before, .loading-pulse:after {
+  content: "";
+  position: absolute;
+  display: block;
+  height: 16px;
+  width: 6px;
+  background: rgba(255, 255, 255, 0.2);
+  top: 50%;
+  transform: translateY(-50%);
+  -webkit-animation: pulse 750ms infinite;
+          animation: pulse 750ms infinite;
+}
+
+.loading-pulse:before {
+  left: -12px;
+}
+
+.loading-pulse:after {
+  left: 12px;
+  -webkit-animation-delay: 500ms;
+          animation-delay: 500ms;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Gowun+Dodum&display=swap');
+@font-face {
+    font-family: 'SF_HambakSnow';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2106@1.1/SF_HambakSnow.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Pretendard-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Pretendard-Light';
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'NEXON Lv1 Gothic OTF';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@2.1/NEXON Lv1 Gothic OTF.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'SBAggroB';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/SBAggroB.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
