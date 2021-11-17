@@ -15,17 +15,6 @@ $(document).ready(function() {
 	});
 });
 
-var enter = function() {
-	/*var door = document.querySelector('#jamb');
-	var newdoor = door.cloneNode(true);
-	document.querySelector('#door').classList.add('open');
-	document.querySelector('#jamb').classList.add('spread');
-	setTimeout(function() {
-		door.remove();
-		document.body.appendChild(newdoor);
-	}, 500) */
-}
-
 jQuery(document).ready(function(){
    $('.title').mousemove(function(e){
      var rXP = (e.pageX - this.offsetLeft-$(this).width()/2);
