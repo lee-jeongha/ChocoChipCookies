@@ -189,8 +189,10 @@ for idx in nidx_str:
     nidx_list.append(list(map(int, idx)))
   else:
     nidx_list.append(list())
-print(nidx_list)
-train_df['면접질문_n'] = nidx_list'''
+train_df['면접질문_n'] = nidx_list
+
+print(embeddings)
+train_df.head(5)'''
 
 checkpoint_path = "training/cp-{epoch:04d}.ckpt"  # 파일 이름에 에포크 번호를 포함시킵니다(`str.format` 포맷)
 checkpoint_dir = os.path.dirname(checkpoint_path)
