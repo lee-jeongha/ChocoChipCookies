@@ -9,6 +9,44 @@
     white-space: nowrap;
 }
 
+header {
+    display: block;
+}
+
+header {
+    width: 100%;
+    height: 60px;
+    z-index: 300;
+    background: rgba(144, 91, 181, 0.7);
+    text-align: center;
+    position: relative;
+    position: fixed;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+header nav {
+    position: absolute;
+    bottom: 0;
+    width: 110%;
+    height: 60px;
+    line-height: 60px;
+    width: 100%;
+    background: rgba(144, 91, 181, 0.7);
+    cursor: pointer;
+}
+
+.logo {
+    padding-top: -20px;
+    margin: 20px;
+    margin-top: 14px;
+}
+
 .behind {
     opacity: 0;
     height: 0;
@@ -32,6 +70,7 @@
     width: 95%;
     height: auto;
     padding: 5% 5%;
+    margin-top: 80px;
     background: #fafafa;
     overflow-x: hidden;
 }
