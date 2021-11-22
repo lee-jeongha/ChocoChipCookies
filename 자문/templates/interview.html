@@ -9,6 +9,12 @@
     <script src="{{ url_for('static', filename='/js/interview.js') }}"></script>
 </head>
 <body>
+    <header>
+		<nav>
+			<img class="logo" src="{{ url_for('static', filename='/img/logo32x32_line.png') }}" alt="홈페이지로 돌아가기" onclick="location.href='/'">
+            <img class="logo" src="{{ url_for('static', filename='/img/es_dot.png') }}" alt="자소서 작성페이지로 돌아가기" onclick="location.href='input'">
+		</nav>
+	</header>
     <div class="back">
         {% for i in range(question_n) %}
             <div class="question behind" id="q{{ i }}">{{ question[i] }}</div>
