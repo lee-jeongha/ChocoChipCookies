@@ -23,43 +23,63 @@
 	<main id="fullpage">
 		<!-- 홈페이지 -->
 		<section class="section">
-			<div class="title">
-				<h6>취업의 문을 열어줄</h6>
-				<h1>자문</h1><br>
-				<h5>		자소서에서 나온 면접질문		</h5><br><i class="icon-star"></i>
-			</div>
-			<div id="jamb" onclick="location.href='input'">
-				<div class="side" id="side1"></div>
-				<div class="side" id="side2"></div>
-				<div class="side" id="side3"></div>
-				<div class="side" id="side4"></div>
-				<div class="crack" id="door">
-					<div id="knob"></div>
-					<div id="porthole"></div>
+			<div class="back">
+				<div class="title">
+					<h6>취업의 문을 열어줄</h6>
+					<h1>자문</h1><br>
+					<h5>		자소서에서 나온 면접질문		</h5><br><i class="icon-star"></i>
 				</div>
+				<div id="jamb" onclick="location.href='input'">
+					<div class="side" id="side1"></div>
+					<div class="side" id="side2"></div>
+					<div class="side" id="side3"></div>
+					<div class="side" id="side4"></div>
+					<div class="crack" id="door">
+						<div id="knob"></div>
+						<div id="porthole"></div>
+					</div>
+				</div>
+					<div class="text">>> 문을 열어보세요</div>
 			</div>
-			<div class="text">>> 문을 열어보세요</div>				
 		</section>
 
 		<!-- 소개 페이지 -->
 		<section class="section">
 			<div class="slide">
-				<h3 class="maincolor">자문은 입력 자기소개서와 기존 면접 질문 간의 유사도를 판별합니다.</h3>
-				<h3 class="maincolor">이를 통해 추출된 면접 질문은 모의 면접의 형태로 제시됩니다.</h3>
-				<h3 class="maincolor">모의 면접이 끝난 후, 전체 질문과 답변을 확인할 수 있습니다.</h3>
+				<p class="p0"><em>취업</em>의 <em>문</em>을 열어줄</p>
+				<img style="height: 40%;" src="{{ url_for('static', filename='/img/logo.png') }}">
+				<p class="p1"><em>자</em>기소개서에서 나온 면접질<em>문</em></p>
 			</div>
 			<div class="slide">
-				<h3 class="maincolor">자문은 이화여자대학교 컴퓨터공학 21-2 캡스톤디자인프로젝트 팀 초코칩쿠키의 프로젝트 결과입니다.</h3>
-				<h3 class="maincolor">MaLSTM 모델을 활용하여 유사도 판단 모델을 구축하였습니다.</h3>
-				<h3 class="maincolor">그 외 자세한 설명은 github에서 확인하실 수 있습니다.</h3>
+				<p class="p2">채용과정에 있어 필수적인</p>
+				<p class="p3">면접</p>
+				<div class="img">
+					<img src="{{ url_for('static', filename='/img/ES.png') }}">
+					<img src="{{ url_for('static', filename='/img/question.png') }}">
+				</div>
+				<p class="p4">내 <em>자소서</em>에서 어떤 <em>면접질문</em>이 나올 수 있는지 궁금하신가요?</p>
+			</div>
+			<div class="slide">
+				<div class="img0">
+					<div class="es">자소서</div><div class="q">면접질문</div>
+					<img style="margin: 20px;" src="{{ url_for('static', filename='/img/ES.png') }}">
+					<img style="margin: 20px;" src="{{ url_for('static', filename='/img/question.png') }}"><br>
+				</div>
+				<span class="arrow"></span><br>
+				<img style="height: 120px;" src="{{ url_for('static', filename='/img/logo256x256.png') }}">
+				<p class="p5"><strong>자문</strong>은 <em>6,942</em>개의 자기소개서와<br><em>33,237</em>개의 면접질문 기반으로 제작된 데이터셋을 학습시킨 AI 입니다.</p>
+			</div>
+			<div class="slide">
+				<p class="p6">자소서와 매칭되는 면접질문을 뽑아주는 <strong>자문</strong>으로<br><em>개인 특화된 모의면접</em>을 경험해보세요!</p>
+				<img src="{{ url_for('static', filename='/img/logo32X32.png') }}">
+				<p class="p7">더 자세한 내용이 궁금하시다면<br>하단의 깃허브 로고를 눌러주세요.</p>
 			</div>
 		</section>
 
 		<!-- ask & footer -->
 		<section class="section fp-auto-height">
 			<p class="padding"></p>
-			<p class="ask_p">궁금하신 점이나 요청사항이 있다면 편하게 연락주세요</p>
-			<a href="" target="_blank" class="ask"><span>문의하기</span></a>
+			<a href="https://github.com/jmirrinae/ChocoChipCookies" target="_blank" class="ask"><span style="overflow: hidden;"><img class="github" src="{{ url_for('static', filename='/img/github.png') }}"></span></a>
 			<p class="padding"></p>
 			<p class="padding"></p>
 			<p class="footer">ⓒ 2021 초코칩쿠키</p>
