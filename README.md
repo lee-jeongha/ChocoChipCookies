@@ -29,7 +29,7 @@ PC의 경우
 * 진행한 모의 면접의 질문과 답변은 텍스트, 음성 파일로 저장되어 사용자가 직접 확인할 수 있습니다.
 
 ### 사용 방법
-1. 시연 영상 : https://youtu.be/vfCdfAlRQJE
+1. 시연 영상 : https://youtu.be/YQRiHiu_v5Q
 
 2. UI
 
