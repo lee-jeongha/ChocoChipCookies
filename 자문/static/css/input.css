@@ -65,6 +65,7 @@ header {
 header h1 {
     font-family: "SBAggroB";
     font-size: 3em;
+    font-weight: 500;
     color: #feb737;
     line-height: 230px;
     -moz-transition: all 0.3s ease;
