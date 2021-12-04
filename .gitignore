@@ -6,6 +6,8 @@
 *.txt
 *.out
 *.pdf
+*.pptx
+*.xlsx
 getQuestion_ver3.py
 ./data
 ./next_button
