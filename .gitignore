@@ -9,9 +9,9 @@ next_button/
 extra/
 
 # data/
-data/embeddings.npy
-data/final.txt
-data/interview_w2v.csv
-data/training_ver2/
-data/training_ver3/
-data/training_ver4.2/
+embeddings.npy
+final.txt
+interview_w2v.csv
+자문/data/training_ver2/
+자문/data/training_ver3/
+자문/data/training_ver4.2/
