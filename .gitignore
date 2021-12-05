@@ -5,11 +5,13 @@
 memo.txt
 nohup.out
 getQuestion_ver3.py
+./next_button
+./extra
+
+#./data
 embeddings.npy
 final.txt
 interview_w2v.csv
 ./training_ver2
 ./training_ver3
 ./training_ver4.2
-./next_button
-./extra
